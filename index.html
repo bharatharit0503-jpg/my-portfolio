@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                text-align: center;
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background-color: #111;
+                color: #fff;
+                margin: 0;
+            }
+            .profile-img {
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                object-position: center 20%;
+                border-radius: 50%;
+                margin-top: 20px;
+                border: 3px solid #ff4500;
+                box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.4);
+            }
+            .hero-title {
+                color: #fff;
+                font-size: 32px;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+            .hero-title span {
+                color: #ff4500;
+            }
+            .hero-subtitle {
+                color: #00ffcc;
+                font-size: 18px;
+                margin-top: 5px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                margin: 5px;
+                background-color: #008CBA;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+            }
+            .btn-insta {
+                background-color: #E1306C;
+            }
+            .btn-hello {
+                background-color: #ff4500;
+            }
+            .skills-box, .project-card {
+                background-color: #222;
+                display: inline-block;
+                padding: 15px 25px;
+                border-radius: 8px;
+                margin-top: 15px;
+                border: 2px dashed #ff4500;
+                text-align: left;
+                max-width: 90%;
+            }
+            .skills-box ul, .project-card ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            .skills-box li, .project-card li {
+                font-size: 16px;
+                margin: 8px 0;
+                color: #00ffcc;
+            }
+            .contact-section {
+                margin-top: 20px;
+            }
+            footer {
+                margin-top: 40px;
+                padding: 20px;
+                border-top: 1px solid #333;
+                color: #888;
+                font-size: 14px;
+            }
+
+            /* Responsive Design for Mobile Screens */
+            @media (max-width: 600px) {
+                body {
+                    padding: 10px;
+                }
+                .profile-img {
+                    width: 140px;
+                    height: 140px;
+                }
+                .hero-title {
+                    font-size: 24px;
+                }
+                .hero-subtitle {
+                    font-size: 14px;
+                }
+                .skills-box, .project-card {
+                    width: 85%;
+                    padding: 12px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <img src="photo.jpeg" alt="Bharat Harit" class="profile-img">
+        
+        <!-- Stylish Header -->
+        <h1 class="hero-title">Hi, I'm <span>Bharat Harit</span></h1>
+        <p class="hero-subtitle">Aspiring Web Developer & Tech Creator</p>
+        
+        <!-- Interactive Hello Button -->
+        <div style="margin-top: 15px;">
+            <button class="btn btn-hello" onclick="alert('Welcome to Bharat Harit portfolio! Coding journey on fire! 🔥')">Say Hello 👋</button>
+        </div>
+
+        <h3>About Me</h3>
+        <p>Learning web development step by step and building cool stuff!</p>
+        
+        <!-- Skills Section -->
+        <h3>My Skills</h3>
+        <div class="skills-box">
+            <ul>
+                <li>🌐 HTML5 (Web Structure)</li>
+                <li>🎨 CSS3 (Styling & Design)</li>
+                <li>📱 Tech & Device Troubleshooting</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <h3>My Projects</h3>
+        <div class="project-card">
+            <ul>
+                <li>🚀 <strong>Personal Portfolio Website:</strong> Mera pehla HTML & CSS web page!</li>
+            </ul>
+        </div>
+        
+        <!-- Social Media Buttons -->
+        <h3>Connect with Me</h3>
+        <div class="contact-section">
+            <a href="https://www.instagram.com/tera_aala_bhaman_?igsh=MTV2bjRvd3dwa2lyeQ%3D%3D&utm_source=qr" target="_blank" class="btn btn-insta">Instagram</a>
+            <a href="https://github.com" target="_blank" class="btn">GitHub</a>
+        </div>
+        
+        <br><br>
+        <a href="https://www.google.com" target="_blank">
+            <button style="padding: 10px 20px; background-color: #444; color: white; border: none; border-radius: 5px; cursor: pointer;">Go to Google!</button>
+        </a>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2026 Bharat Harit. Built with ❤️ and Code.</p>
+        </footer>
+    </body>
+</html>
