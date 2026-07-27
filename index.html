@@ -12,269 +12,203 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #0a192f;
-            color: #8892b0;
-            line-height: 1.6;
+            background-color: #0b1329;
+            color: #ffffff;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .profile-section {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid #ff6600;
-            object-fit: cover;
-            object-position: center 20%; 
-            margin-bottom: 20px;
-            box-shadow: 0 0 15px rgba(255, 102, 0, 0.4);
-        }
-        .name {
-            font-size: 36px;
-            color: #ff6600;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        .title {
-            font-size: 18px;
-            color: #ccd6f6;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         .card {
-            background-color: #112240;
+            background: rgba(17, 24, 39, 0.7);
+            border: 2px dashed rgba(255, 126, 0, 0.4);
+            border-radius: 16px;
+            padding: 25px;
+        }
+        .profile-card {
+            background: rgba(17, 24, 39, 0.7);
+            border: 2px dashed rgba(255, 126, 0, 0.4);
+            border-radius: 16px;
             padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            border: 1px dashed #ff6600;
-            box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-        }
-        .card h2 {
-            color: #ff6600;
-            margin-bottom: 20px;
-            font-size: 22px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
         }
-        .education-item, .skill-item {
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            border: 3px solid #ff7e00;
+            box-shadow: 0 0 15px rgba(255, 126, 0, 0.5);
+        }
+        h1 {
+            color: #ff7e00;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #d1d5db;
+            font-size: 16px;
+        }
+        .section-title {
+            color: #ff7e00;
+            font-size: 22px;
             margin-bottom: 15px;
-        }
-        .education-title {
-            color: #ccd6f6;
+            text-align: center;
             font-weight: bold;
         }
-        .education-details, .skill-details {
-            color: #8892b0;
+        p {
+            color: #9ca3af;
             font-size: 14px;
+            line-height: 1.6;
         }
         .project-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #0a192f;
-            padding: 15px;
-            border-radius: 5px;
+            background: #1f2937;
+            border-radius: 10px;
+            padding: 15px 20px;
             margin-bottom: 15px;
-            border: 1px solid #172a45;
-            flex-wrap: wrap;
-            gap: 10px;
+            border: 1px solid #374151;
         }
-        .project-title {
-            font-weight: bold;
-            color: #ccd6f6;
+        .project-item h3 {
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 5px;
         }
-        .project-desc {
-            font-size: 13px;
-        }
-        .btn-group {
+        .project-buttons {
             display: flex;
-            gap: 8px;
+            gap: 10px;
+            margin-top: 10px;
         }
-        .live-demo-btn, .toggle-history-btn {
-            background-color: #ff6600;
-            color: white;
-            padding: 6px 12px;
-            border-radius: 5px;
+        .btn-live {
+            background: #ff7e00;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 6px;
             text-decoration: none;
             font-size: 13px;
             font-weight: bold;
-            border: none;
-            cursor: pointer;
+            transition: 0.2s;
         }
-        .toggle-history-btn {
-            background-color: #3b82f6;
-        }
-        .live-demo-btn:hover {
-            background-color: #e65c00;
-        }
-        .toggle-history-btn:hover {
-            background-color: #2563eb;
-        }
-        .history-box {
-            display: none;
-            background: #07101e;
-            padding: 12px;
-            border-radius: 6px;
-            margin-top: 10px;
-            width: 100%;
-            border: 1px solid #1e3a8a;
-        }
-        .history-box h4 {
-            color: #60a5fa;
-            font-size: 14px;
-            margin-bottom: 6px;
-        }
-        .history-list {
-            list-style-type: none;
-            color: #94a3b8;
-            font-size: 13px;
-            max-height: 100px;
-            overflow-y: auto;
-        }
-        .history-list li {
-            padding: 3px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+        .btn-live:hover {
+            background: #e06d00;
         }
         .connect-buttons {
             display: flex;
             justify-content: center;
             gap: 15px;
-            flex-wrap: wrap;
         }
         .connect-btn {
+            background: #ff7e00;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 8px 20px;
+            border-radius: 8px;
             text-decoration: none;
-            font-size: 14px;
             font-weight: bold;
+            font-size: 14px;
         }
-        .instagram-btn { background: #E1306C; }
-        .github-btn { background: #333; }
-        .email-btn { background: #D44638; }
     </style>
 </head>
 <body>
 
     <div class="container">
-
-        <!-- Profile Section -->
-        <div class="profile-section">
-            <img src="photo.jpeg" alt="Bharat Harit" class="profile-pic">
-            <div class="name">Hi, I'm Bharat Harit</div>
-            <div class="title">Aspiring Web Developer & Tech Creator</div>
+        
+        <!-- Profile / Header -->
+        <div class="profile-card">
+            <img src="photo.jpeg" alt="Bharat Harit" class="profile-img">
+            <h1>Hi, I'm Bharat Harit</h1>
+            <p class="subtitle">Aspiring Web Developer & Tech Creator</p>
         </div>
 
         <!-- About Me -->
         <div class="card">
-            <h2>About Me</h2>
-            <p>I am currently pursuing my MCA from Baba MastNath University. I have a deep passion for technology, problem-solving, and web development. My goal is to build innovative, clean, and responsive web applications that deliver great user experiences while continuously expanding my technical skills.</p>
+            <div class="section-title">About Me</div>
+            <p>
+                I am currently pursuing my MCA from Baba MastNath University. I have a deep passion for technology, problem-solving, and web development. My goal is to build innovative, clean, and responsive web applications that deliver great user experiences while continuously expanding my technical skills.
+            </p>
         </div>
 
         <!-- Education -->
         <div class="card">
-            <h2>Education</h2>
-            <div class="education-item">
-                <div class="education-title">MCA - Master of Computer Application</div>
-                <div class="education-details">BMU | Pursuing (2027)</div>
-            </div>
-            <div class="education-item" style="margin-top: 12px;">
-                <div class="education-title">Bachelor's Degree</div>
-                <div class="education-details">Baba MastNath University | 2025</div>
-            </div>
-            <div class="education-item" style="margin-top: 12px;">
-                <div class="education-title">Senior Secondary Education</div>
-                <div class="education-details">Govt. Sr. Sec. School | 2022</div>
-            </div>
-            <div class="education-item" style="margin-top: 12px;">
-                <div class="education-title">High School Education</div>
-                <div class="education-details">Himalaya High School | 2020</div>
+            <div class="section-title">Education</div>
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                <div>
+                    <h3 style="color: #fff; font-size: 15px;">MCA - Master of Computer Application</h3>
+                    <p>BMU | Pursuing (2027)</p>
+                </div>
+                <div>
+                    <h3 style="color: #fff; font-size: 15px;">Bachelor's Degree</h3>
+                    <p>Baba MastNath University | 2025</p>
+                </div>
+                <div>
+                    <h3 style="color: #fff; font-size: 15px;">Senior Secondary Education</h3>
+                    <p>Govt. Sr. Sec. School | 2022</p>
+                </div>
+                <div>
+                    <h3 style="color: #fff; font-size: 15px;">High School Education</h3>
+                    <p>Himalaya High School | 2020</p>
+                </div>
             </div>
         </div>
 
-        <!-- My Skills -->
+        <!-- Skills -->
         <div class="card">
-            <h2>My Skills</h2>
-            <div class="skill-item">
-                <div class="skill-title">🌐 HTML5</div>
-                <div class="skill-details">(Web Structure & Semantics)</div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">🎨 CSS3</div>
-                <div class="skill-details">(Styling, Layouts & Design)</div>
-            </div>
-            <div class="skill-item">
-                <div class="skill-title">🛠️ Tech & Device Troubleshooting</div>
-            </div>
+            <div class="section-title">My Skills</div>
+            <p>🟢 HTML5 (Web Structure & Semantics)</p>
+            <p style="margin-top: 8px;">🟡 CSS3 (Styling, Layouts & Design)</p>
+            <p style="margin-top: 8px;">🛠️ Tech & Device Troubleshooting</p>
         </div>
 
         <!-- My Projects -->
         <div class="card">
-            <h2>My Projects</h2>
+            <div class="section-title">My Projects</div>
             
+            <!-- Personal Portfolio -->
             <div class="project-item">
-                <div class="project-info">
-                    <div class="project-title">Personal Portfolio Website</div>
-                    <div class="project-desc">A responsive personal portfolio website built with clean HTML5 & CSS3.</div>
+                <h3>Personal Portfolio Website</h3>
+                <p>A responsive personal portfolio website built with clean HTML5 & CSS3.</p>
+            </div>
+
+            <!-- Stopwatch Project -->
+            <div class="project-item" style="display: flex; flex-direction: column; align-items: flex-start;">
+                <h3>Premium Modern Stopwatch (ISMH)</h3>
+                <p>A sleek glassmorphism stopwatch with lap history & neon effects.</p>
+                <div class="project-buttons">
+                    <a href="#" class="btn-live">View History</a>
+                    <a href="#" class="btn-live">Live Demo</a>
                 </div>
             </div>
 
-            <div class="project-item" style="flex-direction: column; align-items: flex-start;">
-                <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
-                    <div class="project-info">
-                        <div class="project-title">Premium Modern Stopwatch (ISMH)</div>
-                        <div class="project-desc">A sleek glassmorphism stopwatch with lap history & neon effects.</div>
-                    </div>
-                    <div class="btn-group">
-                        <button class="toggle-history-btn" onclick="toggleHistory()">View History</button>
-                        <!-- Corrected Netlify Live Demo Link for Stopwatch -->
-                        <a href="https://calm-pie-56c7e0.netlify.app" target="_blank" class="live-demo-btn">Live Demo</a>
-                    </div>
-                </div>
-                
-                <!-- Lap History Toggle Box -->
-                <div id="lapHistoryBox" class="history-box">
-                    <h4>Stopwatch Lap History</h4>
-                    <ul class="history-list">
-                        <li>Lap 1: 00:05.20s</li>
-                        <li>Lap 2: 00:11.45s</li>
-                        <li>Lap 3: 00:18.90s</li>
-                    </ul>
+            <!-- Weather Dashboard Project -->
+            <div class="project-item">
+                <h3>Pro Weather Dashboard</h3>
+                <p>A sleek and modern weather forecasting web application featuring real-time data, 5-day forecasts, and dynamic atmospheric UI effects.</p>
+                <div class="project-buttons">
+                    <a href="https://bharatharit0503-jpg.github.io/weather-dashboard/" target="_blank" class="btn-live">Live Demo</a>
                 </div>
             </div>
         </div>
 
         <!-- Connect with Me -->
         <div class="card">
-            <h2>Connect with Me</h2>
+            <div class="section-title">Connect with Me</div>
             <div class="connect-buttons">
-                <!-- Instagram Link -->
-                <a href="https://www.instagram.com/tera_aala_bhaman_?igsh=MTV2bjRvd3dwa2lyeQ%3D%3D&utm_source=qr" target="_blank" class="connect-btn instagram-btn">Instagram</a>
-                
-                <!-- GitHub Link -->
-                <a href="https://bharatharit0503-jpg.github.io/my-portfolio/" target="_blank" class="connect-btn github-btn">GitHub</a>
-                
-                <!-- Email Link -->
-                <a href="mailto:Bharatharit0503@gmail.com" class="connect-btn email-btn">Email Me</a>
+                <a href="https://www.instagram.com/tera_aala_bhaman_?igsh=MTV2bjRvd3dwa2lyeQ%3D%3D&utm_source=qr" target="_blank" class="connect-btn" style="background: #db2777;">Instagram</a>
+                <a href="https://github.com/bharatharit0503-jpg" target="_blank" class="connect-btn" style="background: #374151;">GitHub</a>
+                <a href="mailto:bharatharit0503@gmail.com" class="connect-btn" style="background: #2563eb;">Email Me</a>
             </div>
         </div>
 
     </div>
-
-    <script>
-        function toggleHistory() {
-            var box = document.getElementById("lapHistoryBox");
-            if (box.style.display === "block") {
-                box.style.display = "none";
-            } else {
-                box.style.display = "block";
-            }
-        }
-    </script>
 
 </body>
 </html>
